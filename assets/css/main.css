@@ -109,7 +109,7 @@
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     position: absolute;
     list-style: none;
-    top: 100%;
+    top: calc(100% + 1px);
     left: -1.5rem;
     width: 18rem;
     background-color: #fff;
