@@ -166,6 +166,9 @@
     justify-content: space-between;
 
 }
+.header__sidebar-item-link:hover{
+    color: #fff !important;
+}
 
 .header__sidebar-list-home-item>i {
     font-size: 1.6rem;
