@@ -442,28 +442,28 @@
                 </div>
             </header> -->
             <div class="achievement__list">
-                <div class="achievement__item">
+                <div class="achievement__item achievement__item-1">
                     <div class="achievement__item-icon">
                         <i class='bx bxs-graduation'></i>
                     </div>
                     <h1>1700</h1>
                     <span>HAPPY CLIENTS</span>
                 </div>
-                <div class="achievement__item">
+                <div class="achievement__item achievement__item-2">
                     <div class="achievement__item-icon">
                         <i class='bx bxs-bank'></i>
                     </div>
                     <h1>360</h1>
                     <span>ONLINE COURSES</span>
                 </div>
-                <div class="achievement__item">
+                <div class="achievement__item achievement__item-3">
                     <div class="achievement__item-icon">
                         <i class='bx bxs-group'></i>
                     </div>
                     <h1>800</h1>
                     <span>CLIENTS SUPPORT</span>
                 </div>
-                <div class="achievement__item">
+                <div class="achievement__item achievement__item-4">
                     <div class="achievement__item-icon">
                         <i class='bx bxs-book-reader'></i>
                     </div>
@@ -663,5 +663,33 @@
         </ul>
     </div>
 </div>
+<script>
+    const count1 = document.querySelector('.achievement__item-1 h1')
+    const count2 = document.querySelector('.achievement__item-2 h1')
+    const count3 = document.querySelector('.achievement__item-3 h1')
+    const count4 = document.querySelector('.achievement__item-4 h1')
+   
+    
+    function counterUp(el, to) {
+        let speed = 800
+        let from = 0
+        let step = to / speed
+        const counter = setInterval(function () {
+            from += step
+            if (from > to) {
+                clearInterval(counter)
+                el.innerText = to
+            } else {
+                el.innerText = Math.ceil(from)
+            }
+        }, 1)
+    }
+    
+    counterUp(count1, 1700)
+    counterUp(count2, 362)
+    counterUp(count3, 887)
+    counterUp(count4, 422)
+</script>
+
 
 </html>
