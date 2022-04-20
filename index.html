@@ -262,19 +262,19 @@
     <div id="home" class="home">
         <div class="container col-xxl-8 px-4 py-5">
             <div class="slide-1 row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="header__logo col-10 col-sm-8 col-lg-6">
+                <div class="header__logo col-10 col-sm-8 col-lg-6 right-to-left show-on-scroll">
                     <img src="https://images.pexels.com/photos/3184425/pexels-photo-3184425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                         alt="" class="img-slide1-right d-block mx-lg-auto img-fluid">
                 </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold lh-1 mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <div class="col-lg-6 left-to-right show-on-scroll">
+                    <h1 class="display-5 fw-bold lh-1 mb-3 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Voluptatibus, perferendis.</h1>
                     <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt harum quia odit
                         soluta architecto, ea non id quasi minus expedita beatae. Ab illum delectus corrupti tempora
                         aspernatur cumque, molestias libero.</p>
                 </div>
                 <div class="slide-1__btn-cover d-grid gap-2 d-md-flex  justify-content-md-start">
-                    <button class="slide-1__btn btn btn-outline-secondary btn-lg px-4">CLICK HERE FOR YOUR FREE PROGRAM
+                    <button class=" zoom show-on-scroll slide-1__btn btn btn-outline-secondary btn-lg px-4">CLICK HERE FOR YOUR FREE PROGRAM
                         <i class='bx bx-right-arrow-alt'></i></button>
                 </div>
             </div>
@@ -284,9 +284,9 @@
         <div class="container py-5">
             <header>
                 <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                    <h1 class="display-4 fw-normal">Best </h1>
-                    <h1 class="display-4 fw-normal">Course</h1>
-                    <p class="fs-5 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
+                    <h1 class="display-4 fw-normal left-to-right show-on-scroll">Best </h1>
+                    <h1 class="display-4 fw-normal right-to-left show-on-scroll">Course</h1>
+                    <p class=" fs-5 text-muted zoom show-on-scroll">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque
                         voluptatem laborum laudantium temporibus doloremque necessitatibus quaerat impedit, aut
                         distinctio sapiente aliquid. Commodi corporis libero, dicta earum nobis laudantium illum
                         dolorum!</p>
@@ -295,7 +295,7 @@
 
             <main>
                 <div class="list-course-item">
-                    <div class="course-item">
+                    <div class="course-item zoom show-on-scroll">
                         <div class="course-item-img">
                             <div class="course-item__img">
                                 <img src="https://lernen.drozd.at/wp-content/uploads/2019/08/dark_course-400x300.jpg"
@@ -339,7 +339,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="course-item">
+                    <div class="course-item zoom show-on-scroll">
                         <div class="course-item-img">
                             <div class="course-item__img">
                                 <img src="https://lernen.drozd.at/wp-content/uploads/2019/07/testimonial-400x300.jpg"
@@ -383,7 +383,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="course-item">
+                    <div class="course-item zoom show-on-scroll">
                         <div class="course-item-img">
                             <div class="course-item__img">
                                 <img src="https://lernen.drozd.at/wp-content/uploads/2019/07/slider-bg1-1-400x300.jpg"
@@ -442,28 +442,28 @@
                 </div>
             </header> -->
             <div class="achievement__list">
-                <div class="achievement__item achievement__item-1">
+                <div class="achievement__item achievement__item-1 left-to-right show-on-scroll">
                     <div class="achievement__item-icon">
                         <i class='bx bxs-graduation'></i>
                     </div>
                     <h1>1700</h1>
                     <span>HAPPY CLIENTS</span>
                 </div>
-                <div class="achievement__item achievement__item-2">
+                <div class="achievement__item achievement__item-2 zoom show-on-scroll">
                     <div class="achievement__item-icon">
                         <i class='bx bxs-bank'></i>
                     </div>
                     <h1>360</h1>
                     <span>ONLINE COURSES</span>
                 </div>
-                <div class="achievement__item achievement__item-3">
+                <div class="achievement__item achievement__item-3 zoom show-on-scroll">
                     <div class="achievement__item-icon">
                         <i class='bx bxs-group'></i>
                     </div>
                     <h1>800</h1>
                     <span>CLIENTS SUPPORT</span>
                 </div>
-                <div class="achievement__item achievement__item-4">
+                <div class="achievement__item achievement__item-4 right-to-left show-on-scroll">
                     <div class="achievement__item-icon">
                         <i class='bx bxs-book-reader'></i>
                     </div>
@@ -668,8 +668,8 @@
     const count2 = document.querySelector('.achievement__item-2 h1')
     const count3 = document.querySelector('.achievement__item-3 h1')
     const count4 = document.querySelector('.achievement__item-4 h1')
-   
-    
+
+
     function counterUp(el, to) {
         let speed = 800
         let from = 0
@@ -685,10 +685,39 @@
         }, 1)
     }
     
-    counterUp(count1, 1700)
+    
+    counterUp(count1, 1726)
     counterUp(count2, 362)
     counterUp(count3, 887)
     counterUp(count4, 422)
+
+    let elToShow = document.querySelectorAll('.show-on-scroll')
+
+    let isElInViewPort = (el) => {
+        let rect = el.getBoundingClientRect()
+        // some browsers support innerHeight, others support documentElement.clientHeight
+        let viewHeight = window.innerHeight || document.documentElement.clientHeight
+
+        return (
+            (rect.top <= 0 && rect.bottom >= 0) ||
+            (rect.bottom >= viewHeight && rect.top <= viewHeight) ||
+            (rect.top >= 0 && rect.bottom <= viewHeight)
+        )
+    }
+
+    function loop() {
+        elToShow.forEach((item) => {
+            if (isElInViewPort(item)) {
+                item.classList.add('start')
+            } else {
+                item.classList.remove('start')
+            }
+        })
+    }
+
+    window.onscroll = loop
+
+    loop()
 </script>
 
 
