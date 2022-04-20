@@ -878,3 +878,44 @@
 .copyright li:first-child:before{
     display: none;
 }
+
+.left-to-right {
+	transform: translateX(-150%);
+    opacity: 0;
+}
+
+.left-to-right.start {
+	transition: 0.7s ease-in-out;
+	transform: translateX(0);
+    opacity: 1;
+}
+
+.right-to-left {
+	transform: translateX(150%);
+    opacity: 0;
+
+}
+
+.right-to-left.start {
+	transition: 0.7s ease-in-out;
+	transform: translateX(0);
+    opacity: 1;
+
+}
+
+.zoom {
+	transform: scale(0);
+    opacity: 0;
+
+}
+
+.zoom.start {
+	transition: 0.5s ease-in-out;
+	transform: unset;
+    opacity: 1;
+
+}
+
+.display-4{
+    position: relative;
+}
