@@ -414,6 +414,11 @@
 
 .pricing-header {
     color: var(--primary-color);
+    /* margin-bottom: 2rem; */
+}
+
+.pricing-header p{
+    margin-top: 2rem ;
 }
 
 .pricing-header h1:first-child {
@@ -493,7 +498,10 @@
 .course-item__rating {
     font-size: 2rem;
     color: rgb(255, 162, 0);
+    user-select: none;
 }
+
+
 
 .course-item__description h1 {
     margin: 2rem 0;
@@ -885,29 +893,25 @@
     display: none;
 }
 
-.left-to-right {
-	transform: translateX(-150%);
+.bottom-to-top {
+	transform: translateY(150%);
     opacity: 0;
 }
 
-.left-to-right.start {
+.bottom-to-top.start {
 	transition: 0.7s ease-in-out;
-	transform: translateX(0);
+	transform: translateY(0);
     opacity: 1;
 }
 
-.right-to-left {
-	transform: translateX(150%);
+.fade-in {
     opacity: 0;
 }
 
-.right-to-left.start {
+.fade-in.start {
 	transition: 0.7s ease-in-out;
-	transform: translateX(0);
     opacity: 1;
-
 }
-
 
 .zoom {
 	transform: scale(0);
@@ -925,3 +929,4 @@
 .display-4{
     position: relative;
 }
+
