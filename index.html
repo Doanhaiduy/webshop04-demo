@@ -22,10 +22,12 @@
 </head>
 
 <body>
+    <div id="proressbar"></div>
+    <div id="scroll-path"></div>
     <header class="header-top">
         <div class=" container d-flex flex-wrap justify-content-center py-3">
             <a class="header__logo d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
-                <img src="./assets/img/logo.png" alt="">
+                <img src="./assets/img/logo2.png" alt="">
             </a>
             <div class="header__sidebar nav nav-pills">
                 <ul class="header__sidebar-list">
@@ -711,21 +713,28 @@
             (rect.top >= 0 && rect.bottom <= viewHeight)
         )
     }
+    //scroll
 
-    function loop() {
+    function count() {
         elToShow.forEach((item) => {
             if (isElInViewPort(item)) {
                 item.classList.add('start')
             } else {
-                // item.classList.remove('start')
+                item.classList.remove('start')
             }
         })
     }
 
-    window.onscroll = loop
-
-    loop()
-
+    
+    let progress = document.getElementById('proressbar')
+    let totalHeight = document.body.scrollHeight - window.innerHeight;
+    function progressScroll(){
+        let progressHeigt = (window.pageYOffset / totalHeight)*100;
+        progress.style.width = progressHeigt + '%';
+    }
+    window.addEventListener('scroll',count);
+    window.addEventListener('scroll',progressScroll);
+    // loop()
 </script>
 
 </html>
