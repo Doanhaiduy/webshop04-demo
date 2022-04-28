@@ -98,7 +98,7 @@ h6 {
   top: 0;
   left: 0;
   height: 7px;
-  width: 100%;
+  width: 0%;
   background: linear-gradient(to top, #008aff, #00ffe7);
   animation: scroll linear 5s infinite ;
   z-index: 1000000;
