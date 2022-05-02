@@ -1,0 +1,501 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="./assets/css/grid.css"> -->
+    <title>Buy Course</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon"
+        href="https://scontent.fdad2-1.fna.fbcdn.net/v/t1.15752-9/277754710_1354862985027402_4535549837716455995_n.png?_nc_cat=107&ccb=1-5&_nc_sid=ae9488&_nc_ohc=7Kn5_2gATpoAX9kkHA_&tn=37HyNkzTpVacaVIR&_nc_ht=scontent.fdad2-1.fna&oh=03_AVIUG5MvUoU1RekDOHZNHuswBgJwuCaRzvJB55D7AtNZ6A&oe=627E9B93">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="proressbar"></div>
+    <div id="scroll-path"></div>
+    <header class="header-top">
+        <div class=" container d-flex flex-wrap justify-content-center py-3">
+            <a href="./index.html" class="header__logo d-flex align-items-center mb-3 mb-md-0 me-md-auto text-decoration-none">
+                <img src="./assets/img/logo2.png" alt="">
+            </a>
+            <div class="header__sidebar nav nav-pills">
+                <ul class="header__sidebar-list">
+                    <li class="header__sidebar-item">
+                        <a href="./index.html#home" class="header__sidebar-item-link">
+                            Home
+                            <i class='bx bxs-chevron-down header__sidebar-item-icon active'></i>
+                            <ul class="header__sidebar-list-home">
+                                <li class="header__sidebar-list-home-item">Home Main</li>
+                                <li class="header__sidebar-list-home-item">Home Page</li>
+                                <li class="header__sidebar-list-home-item">Home Page</li>
+                                <li class="header__sidebar-list-home-item">Home Page</li>
+                                <li class="header__sidebar-list-home-item">Home Page</li>
+                                <li class="header__sidebar-list-home-item">Home Page</li>
+                                <li class="header__sidebar-list-home-item">Home Page</li>
+                                <li class="header__sidebar-list-home-item">Home Page</li>
+                                <li class="header__sidebar-list-home-item">Home Page</li>
+                            </ul>
+                        </a>
+
+                    </li>
+                    <li class="header__sidebar-item">
+                        <a href="./index.html#courses" class="header__sidebar-item-link">
+                            Courses
+                            <i class='bx bxs-chevron-down header__sidebar-item-icon'></i>
+                            <ul class="header__sidebar-list-course">
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxs-brightness'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>Administrative </h3>
+                                        <p>(126) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-go-lang'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>Go lang</h3>
+                                        <p>(131) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-android'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>Android</h3>
+                                        <p>(111) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-java'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>java</h3>
+                                        <p>(67) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-html5'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>HTML - 5</h3>
+                                        <p>(223) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-css3'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>CSS - 3</h3>
+                                        <p>(89) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-javascript'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>javascript</h3>
+                                        <p>(158) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-c-plus-plus'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>C++</h3>
+                                        <p>(82) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-python'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>python</h3>
+                                        <p>(205) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-react'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>ReactJs</h3>
+                                        <p>(327) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-nodejs'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>NodeJs</h3>
+                                        <p>(121) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-bootstrap'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>bootstrap</h3>
+                                        <p>(164) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-angular'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>angular</h3>
+                                        <p>(155) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-php'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>PHP</h3>
+                                        <p>(56) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-tailwind-css'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>tailwind</h3>
+                                        <p>(93) Course</p>
+                                    </div>
+                                </li>
+                                <li class="header__sidebar-list-course-item">
+                                    <div class="header__sidebar-list-course-icon">
+                                        <i class='bx bxl-spring-boot'></i>
+                                    </div>
+                                    <div class="header__sidebar-list-course-category">
+                                        <h3>spring boot</h3>
+                                        <p>(77) Course</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="header__sidebar-item">
+                        <a href="./index.html#instructors" class="header__sidebar-item-link">
+                            Instructors
+                            <i class='bx bxs-chevron-down header__sidebar-item-icon'></i>
+                            <ul class="header__sidebar-list-home">
+                                <li class="header__sidebar-list-home-item">Instructors</li>
+                                <li class="header__sidebar-list-home-item">Instructors 2</li>
+                                <li class="header__sidebar-list-home-item">Categories</li>
+                                <li class="header__sidebar-list-home-item">Courses Listview</li>
+                                <li class="header__sidebar-list-home-item">Courses Grid</li>
+                                <li class="header__sidebar-list-home-item">Courses Grid 2</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="header__sidebar-item">
+                        <a href="./index.html#features" class="header__sidebar-item-link">
+                            Features
+                            <i class='bx bxs-chevron-down header__sidebar-item-icon'></i>
+                            <ul class="header__sidebar-list-home">
+                                <li class="header__sidebar-list-home-item">Portfolio
+                                    <i class='bx bxs-chevron-right-circle'></i>
+                                    <ul class="header__sidebar-list-home-list-portfolio">
+                                        <li class="header__sidebar-list-home-item-portfolio">Login page</li>
+                                        <li class="header__sidebar-list-home-item-portfolio">Register Page</li>
+                                        <li class="header__sidebar-list-home-item-portfolio">Photo Gallery</li>
+                                    </ul>
+                                </li>
+                                <li class="header__sidebar-list-home-item">Typography</li>
+                                <li class="header__sidebar-list-home-item">Shortcodes</li>
+                                <li class="header__sidebar-list-home-item">Page Leftsidebar</li>
+                                <li class="header__sidebar-list-home-item">Page Rightsidebar</li>
+                                <li class="header__sidebar-list-home-item">Coming Soon</li>
+                                <li class="header__sidebar-list-home-item">404</li>
+                                <li class="header__sidebar-list-home-item">404 Page 2</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="header__sidebar-item">
+                        <a href="./index.html#about" class="header__sidebar-item-link">
+                            About
+                            <i class='bx bxs-chevron-down header__sidebar-item-icon'></i>
+                            <ul class="header__sidebar-list-home">
+                                <li class="header__sidebar-list-home-item">About 1</li>
+                                <li class="header__sidebar-list-home-item">About 2</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li class="header__sidebar-item">
+                        <a href="./index.html#contact" class="header__sidebar-item-link">
+                            Contact
+                            <i class='bx bxs-chevron-down header__sidebar-item-icon'></i>
+                            <ul class="header__sidebar-list-home">
+                                <li class="header__sidebar-list-home-item">Contact 1</li>
+                                <li class="header__sidebar-list-home-item">Contact 2</li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div id="course-slider" class="course-slider">
+        <div class="container py-5">
+            <div class="course-slider-header">
+                <h2 data-text="Dolor sit amet" class="course-slider-title">Dolor sit amet</h2>
+                <p class="course-slider-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, quae doloremque! Impedit ipsum hic eum ea. Minus praesentium possimus placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, perferendis.</p>
+                <button class="button course-slider-btn">START COURSES</button>
+            </div>
+            <ul class="course-slider-list">
+                <li class="course-slider-item">
+                    <div class="course-slider-item-icon">
+                        <i style="--clr: #e34c26" class='bx bxl-html5' ></i>
+                    </div>
+                    <h3 style="--clr: #e34c26" class="course-slider-item-header">
+                        Master HTML
+                    </h3>
+                    <p class="course-slider-item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut, libero consequuntur ipsam ipsum odit. Perferendis harum, aliquid itaque aut cumque sint ea voluptate accusantium fugiat in qui excepturi temporibus ducimus, exercitationem, iusto fugit corporis maiores quaerat! Nisi eligendi ducimus iste accusamus?
+                    </p>
+                </li>
+                <li class="course-slider-item">
+                    <div class="course-slider-item-icon">
+                        <i style="--clr: #264de4" class='bx bxl-css3' ></i>
+                    </div>
+                    <h3 style="--clr: #264de4" class="course-slider-item-header">
+                        Master CSS
+                    </h3>
+                    <p class="course-slider-item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut, libero consequuntur ipsam ipsum odit. Perferendis harum, aliquid itaque aut cumque sint ea voluptate accusantium fugiat in qui excepturi temporibus ducimus, exercitationem, iusto fugit corporis maiores quaerat! Nisi eligendi ducimus iste accusamus?
+                    </p>
+                </li>
+                <li class="course-slider-item">
+                    <div class="course-slider-item-icon">
+                        <i style="--clr: #35b3eb" class='bx bxl-tailwind-css' ></i>
+                    </div>
+                    <h3 style="--clr: #35b3eb" class="course-slider-item-header">
+                        Master TAILWIND
+                    </h3>
+                    <p class="course-slider-item-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic ut, libero consequuntur ipsam ipsum odit. Perferendis harum, aliquid itaque aut cumque sint ea voluptate accusantium fugiat in qui excepturi temporibus ducimus, exercitationem, iusto fugit corporis maiores quaerat! Nisi eligendi ducimus iste accusamus?
+                    </p>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <div class="footer-container container py-5">
+        <div class="footer-container-list">
+            <h3 class="footer-container-title">
+                ABOUT US
+            </h3>
+            <p class="footer-container-description">
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus, Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Doloremque delectus nihil at. Nihil tempora provident illo rem
+                deleniti assumenda recusandae?
+            </p>
+            <div class="footer-container-social">
+                <i class='bx bxl-facebook'></i>
+                <i class='bx bxl-twitter'></i>
+                <i class='bx bxl-google-plus'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-pinterest-alt'></i>
+                <i class='bx bxl-linkedin'></i>
+                <i class='bx bxl-flickr'></i>
+            </div>
+        </div>
+        <div class="footer-container-list">
+            <h3 class="footer-container-title">
+                RECENT NEWS
+            </h3>
+            <ul>
+                <li>
+                    <i class='bx bx-chevron-right'></i>
+                    SEM PORTA MOLLIS PARTURIENT
+                </li>
+                <li>
+                    <i class='bx bx-chevron-right'></i>
+                    NULLAM LOREM MATTIS PURUS
+                </li>
+                <li>
+                    <i class='bx bx-chevron-right'></i>
+                    NIBH SEM SIT ULLAMCORPER
+                </li>
+                <li>
+                    <i class='bx bx-chevron-right'></i>
+                    DONEC LUCTUS IMPERDIET
+                </li>
+                <li>
+                    <i class='bx bx-chevron-right'></i>
+                    MAGNA PARS STUDIORUM
+                </li>
+            </ul>
+        </div>
+        <div class="footer-container-list">
+            <h3 class="footer-container-title">
+                GET YOUR SEAT!
+            </h3>
+            <p class="footer-container-description">
+                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <form action="">
+                <input placeholder="Your email address" type="email">
+                <button name="btn">Subscribe</button>
+
+            </form>
+        </div>
+        <div class="footer-container-list">
+            <h3 class="footer-container-title">
+                Latest Gallery Image
+            </h3>
+            <div class="img-footer">
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/12/photodune-7770665-two-white-coffee-mug-with-diy-decoration-on-vintage-effect-m-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/12/photodune-8523683-speaker-at-business-convention-and-presentation-m-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/12/photodune-6745579-modern-creative-man-relaxing-on-workspace-m-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/12/photodune-8522811-speaker-at-business-conference-and-presentation-m-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/12/photodune-8797753-multiethnic-people-with-startup-business-talking-in-a-cafe-m-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/11/card04-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/12/photodune-6745606-man-wristwatch-calendar-key-and-glasses-on-a-old-table-m-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/12/photodune-6745585-modern-creative-workspace-m-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/11/6426608875_186070f8ca_o-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/11/card01-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/11/13349065283_64d09b067c_o-150x150.jpg"
+                        alt="">
+                </div>
+                <div class="img">
+                    <img src="https://a6e8z9v6.stackpathcdn.com/thekeynote/wp-content/uploads/2013/12/photodune-8795110-overhead-of-essentials-denim-clothes-m-150x150.jpg"
+                        alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copyright">
+    <div class="container">
+        <p>
+            © Copyright DoanHaiDuy, All Right Reserved
+        </p>
+        <ul>
+            <li>About Us</li>
+            <li>Accommodation</li>
+            <li>Call For Paper</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    // let progress = document.getElementById('proressbar')
+    // let totalHeight = document.body.scrollHeight - window.innerHeight;
+    // function progressScroll() {
+    //     let progressHeigt = (window.pageYOffset / totalHeight) * 100;
+    //     progress.style.width = progressHeigt + '%';
+    // }
+    // window.addEventListener('scroll', count);
+    // window.addEventListener('scroll', progressScroll);
+
+    $(document).ready(function () {
+        $('.course-slider-list').slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow: `<button type='button' class='slick-prev pull-left'><i class='bx bxs-left-arrow'></i></button>`,
+            nextArrow: `<button type='button' class='slick-next pull-right'><i class='bx bxs-right-arrow'></i></button>`,
+            dots: false,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true
+                    }
+                }
+            ]
+        });
+    })
+
+    </script>
+</html> -->
