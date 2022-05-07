@@ -1272,7 +1272,7 @@
 }
 
 .section h4 {
-    color: #fff;
+    color: rgb(38, 25, 25);
     font-weight: 600;
     font-size: 3rem;
 }
@@ -1307,8 +1307,8 @@
     left: -9999px;
 }
 
-.checkbox:checked+label,
-.checkbox:not(:checked)+label {
+.form-register .checkbox:checked+label,
+.form-register .checkbox:not(:checked)+label {
     position: relative;
     display: block;
     text-align: center;
@@ -1321,8 +1321,8 @@
     background-color: #ffeba7;
 }
 
-.checkbox:checked+label:before,
-.checkbox:not(:checked)+label:before {
+.form-register .checkbox:checked+label:before,
+.form-register .checkbox:not(:checked)+label:before {
     position: absolute;
     display: block;
     width: 36px;
@@ -1341,12 +1341,12 @@
     transition: all 0.5s ease;
 }
 
-.checkbox:checked+label:before {
+.form-register .checkbox:checked+label:before {
     transform: translateX(44px) rotate(-270deg);
 }
 
 
-.card-3d-wrap {
+.form-register .card-3d-wrap {
     position: relative;
     width: 440px;
     max-width: 100%;
@@ -1357,7 +1357,7 @@
     margin-top: 60px;
 }
 
-.card-3d-wrapper {
+.form-register .card-3d-wrapper {
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1368,11 +1368,11 @@
     transition: all 600ms ease-out;
 }
 
-.card-front,
-.card-back {
+.form-register .card-front,
+.form-register .card-back {
     width: 100%;
     height: 100%;
-    background-color: #223b57;
+    background-color: #ffffff;
     background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
     background-position: bottom center;
     background-repeat: no-repeat;
@@ -1389,15 +1389,15 @@
     backface-visibility: hidden;
 }
 
-.card-back {
+.form-register .card-back {
     transform: rotateY(180deg);
 }
 
-.checkbox:checked~.card-3d-wrap .card-3d-wrapper {
+.form-register .checkbox:checked~.card-3d-wrap .card-3d-wrapper {
     transform: rotateY(180deg);
 }
 
-.center-wrap {
+.form-register .center-wrap {
     position: absolute;
     width: 100%;
     padding: 0 35px;
@@ -1409,14 +1409,14 @@
 }
 
 
-.form-group {
+.form-register .form-group {
     position: relative;
     display: block;
     margin: 0;
     padding: 0;
 }
 
-.form-style {
+.form-register .form-style {
     padding: 13px 20px;
     padding-left: 55px;
     height: 48px;
@@ -1427,22 +1427,22 @@
     line-height: 22px;
     letter-spacing: 0.5px;
     outline: none;
-    color: #c4c3ca;
-    background-color: #1f2029;
+    color: #09090b;
+    background-color: var(--primary-color);
     border: none;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }
 
-.form-style:focus,
-.form-style:active {
+.form-register .form-style:focus,
+.form-register .form-style:active {
     border: none;
     outline: none;
     box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
 }
 
-.input-icon {
+.form-register .input-icon {
     position: absolute;
     top: 0;
     left: 18px;
@@ -1455,53 +1455,53 @@
     transition: all 200ms linear;
 }
 
-.form-group input:-ms-input-placeholder {
-    color: #c4c3ca;
+.form-register .form-group input:-ms-input-placeholder {
+    color: #1a1727;
     opacity: 0.7;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
-.form-group input::-moz-placeholder {
-    color: #c4c3ca;
+.form-register .form-group input::-moz-placeholder {
+    color: #14131d;
     opacity: 0.7;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
-.form-group input:-moz-placeholder {
-    color: #c4c3ca;
+.form-register .form-group input:-moz-placeholder {
+    color: #14131d;
     opacity: 0.7;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
-.form-group input::-webkit-input-placeholder {
-    color: #c4c3ca;
+.form-register .form-group input::-webkit-input-placeholder {
+    color: #14131d;
     opacity: 0.7;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
-.form-group input:focus:-ms-input-placeholder {
+.form-register .form-group input:focus:-ms-input-placeholder {
     opacity: 0;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
-.form-group input:focus::-moz-placeholder {
+.form-register .form-group input:focus::-moz-placeholder {
     opacity: 0;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
-.form-group input:focus:-moz-placeholder {
+.form-register .form-group input:focus:-moz-placeholder {
     opacity: 0;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
 
-.form-group input:focus::-webkit-input-placeholder {
+.form-register .form-group input:focus::-webkit-input-placeholder {
     opacity: 0;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
@@ -1538,8 +1538,8 @@
 
 .form-register .btn:active,
 .form-register .btn:focus {
-    background-color: #102770;
-    color: #ffeba7;
+    /* background-color: #102770; */
+    /* color: #1f1e1d; */
     box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
 }
 
@@ -1547,22 +1547,4 @@
     background-color: #102770;
     color: #ffeba7;
     box-shadow: 0 8px 24px 0 rgba(16, 39, 112, .2);
-}
-
-
-
-
-.logo {
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    display: block;
-    z-index: 100;
-    transition: all 250ms linear;
-}
-
-.logo img {
-    height: 26px;
-    width: auto;
-    display: block;
 }
